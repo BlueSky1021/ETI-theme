@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETI Payment Receipt - Email Template</title>
+<style type="text/css">
+  .text-right{text-align: right;}
+  .no-padding {padding: 0;}
+  .no-margin {margin: 0;}
+  ul.rto-code {padding: none;text-align: center;margin-top: 15px;font-size: 14px;font-weight: bold;}
+  ul.rto-code li{list-style: none;display: inline;padding: 0 10px; border-right: 1px solid #363636;}
+   ul.rto-code li:last-child{border:0;}
+</style>
+  </head>
+  <body  style="font-family: 'Malgun Gothic', Arial, sans-serif; margin: 0; padding: 0; width: 100%; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; position: relative;background-color: #EBF0EB;">
+<div class="main-wrapper" style="padding: 20px;">
+      <table class="table-responsive" align="center" width="800" style="box-shadow: 0px 0px 3px #cccccc;font-size: 14px;color: #555555;background: #fff;">
+      <tbody class="">
+        <tr>
+          <td colspan="2"><div class="clearfix" style="height:50px;"></div></td>
+        </tr>
+      <tr>
+        <td width="50%" style="padding-left: 60px;">
+          <img src="http://eti.edu.au/file/email/images/eti_coloredtext_new_logo.png" style="margin: 0 auto;display: block; width: 200px;">
+        </td>
+        <td style="font-size: 10px;padding-right: 60px;" width="50%">
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">HEAD OFFICE: 20, Otter Street,</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">Collingwood VIC 3066</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">VICTORIA: 03 9088 0255</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">QUEENSLAND: 07 3154 2859</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">WEBSITE: www.eti.edu.au</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">EMAIL: info@eti.edu.au</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 0 60px;">
+         <div class="clearfix" style="height: 15px;"></div>
+        <p>You got Cash!</p>
+        <p>This email confirms that you received a payment..</p>
+              <table width="100%" class="payment-receipt-table">
+                  <tr>
+                    <td width="30%" class="text-right" style="padding-right: 20px;"><b>Transaction reference:</b> </td>
+                    <td width="70%">%trxn_code%</td>
+                  </tr>
+                </table>
+        <p>The number above is the buyer's receipt ID for this transaction. Please retain it for your records so that you will be able to reference this transaction for customer services.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-size: 14px;padding: 0 60px;">
+          <div class="email-container">
+          <div class="clearfix"></div>
+                <div style="border-bottom: dotted 2px #ccc;width: 100%;"></div>
+                <p><b>Payment Details</b></p>
+                <div class="clearfix" style="height: 15px;"></div>
+                <table width="100%" class="payment-receipt-table">
+                  <tr>
+                    <td width="30%" class="text-right" style="padding-right: 20px;"><b>Total Amount: </b></td>
+                    <td width="70%">$ %amount% AUD</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right" style="padding-right: 20px;"><b>Student ID:</b></td>
+                    <td>%student_id%</td>
+                  </tr>
+                  <tr>
+                    <td class="text-right" style="padding-right: 20px;"><b>Fullname:</b></td>
+                    <td>%student%</td>
+                  </tr>
+                </table>
+                <div class="clearfix" style="height: 15px;"></div>
+              <div style="border-bottom: dotted 2px #ccc;width: 100%;"></div>
+              <div class="clearfix" style="height:25px;"></div>
+              <p class="no-margin">Regards,</p>
+              <p class="no-margin">ETI Online Accounts</p>
+          </div>
+          <div class="clearfix" style="height:50px;"></div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+  </body>
+</html>

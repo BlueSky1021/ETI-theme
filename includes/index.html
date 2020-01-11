@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETI Payment Receipt - Email Template</title>
+<style type="text/css">
+  .no-padding {padding: 0;}
+  .no-margin {margin: 0;}
+  ul.rto-code {padding: none;text-align: center;margin-top: 15px;font-size: 14px;font-weight: bold;}
+  ul.rto-code li{list-style: none;display: inline;padding: 0 10px; border-right: 1px solid #363636;}
+   ul.rto-code li:last-child{border:0;}
+</style>
+  </head>
+  <body  style="font-family: 'Malgun Gothic', Arial, sans-serif; margin: 0; padding: 0; width: 100%; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; position: relative;">
+<div class="main-wrapper" style="padding: 20px;">
+      <table class="table-responsive" align="center" width="800" style="box-shadow: 0px 0px 3px #cccccc;">
+      <tbody class="">
+        <tr>
+          <td colspan="2"><div class="clearfix" style="height:40px;"></div></td>
+        </tr>
+      <tr>
+        <td width="50%" style="padding-left: 60px;">
+          <img src="http://eti.edu.au/files/email/images/eti_coloredtext_new_logo.png" style="margin: 0 auto;display: block; width: 200px;">
+        </td>
+        <td style="font-size: 10px;padding-right: 60px;" width="50%">
+          <p class="no-margin">20, Otter Street, Collingwood VIC 3066</p>
+          <p class="no-margin">Phone: 03 9088 0255</p>
+          <p class="no-margin">National Provider Number: 40965</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 0 60px;">
+          <ul class="rto-code ">
+            <li>RTO Provider No.  40965</li>
+            <li>CRICOS Code  03470A</li>
+            <li>Nationally Recognised Training</li>
+          </ul>
+          <div class="clearfix" style="height: 20px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 0 60px;">
+          <div class="title">
+            <!-- <h1 class="" style="color: #147347;font-size: 32px;text-align: center;margin: 30px 0;">Title Here</h1> -->
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" style="padding-left: 60px;">
+
+          <p class="no-margin">To,</p>
+          <p class="no-margin">%student%</p>
+          <p class="no-margin">%address%</p>
+        </td>
+        <td width="50%" valign="top" class="no-padding" style="padding-right: 60px;text-align: right">
+          <p class="no-margin ">Dated: %date%</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-size: 14px;padding: 0 60px;">
+          <div class="email-container">
+          <div class="clearfix"></div>
+                <p style="font-size: 16px;">This is to notify you that we receive your payment</p>
+                <p>Transaction Details</p>
+                <!-- <p>Transaction Approved</p> -->
+                <div class="clearfix" style="height: 20px;"></div>
+                <table width="100%" class="payment-receipt-table">
+                  <tr>
+                    <td width="25%">Transaction Type:</td>
+                    <td width="75%">Payment</td>
+                  </tr>
+                  <tr>
+                    <td>Date & Time:</td>
+                    <td>%datetime%</td>
+                  </tr>
+                  <tr>
+                    <td>Merchant Name:</td>
+                    <td>ELITE TRAINING</td>
+                  </tr>
+                  <tr>
+                    <td>Transaction Reference:</td>
+                    <td>%trxn_code%</td>
+                  </tr>
+                  <tr>
+                    <td>Amount:</td>
+                    <td>$%amount% AUD</td>
+                  </tr>
+                 <!--  <tr>
+                    <td>Credit Card Number:</td>
+                    <td>%cred_num%</td>
+                  </tr>
+                  <tr>
+                    <td>Credit card Expiry Date:</td>
+                    <td>%cardexp%</td>
+                  </tr> -->
+                </table>
+              <div class="clearfix" style="height:50px;"></div>
+              <p class="no-margin">Regards</p>
+              <p class="no-margin">Administration Department </p>
+              <p class="no-margin">Elite Training Institute</p>
+          </div>
+          <div class="clearfix" style="height:80px;"></div>
+          <div class="footer" style="text-decoration: underline;padding-bottom: 40px;">
+            <p class="no-margin"><a style="color: #78B526;">Unsubscibe</a></p>
+            <p class="no-margin"><a style="color: #78B526;">View this email on the web</a></p>
+            <p class="no-margin"><a style="color: #78B526;">www.eti.edu.au</a></p>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+  </body>
+</html>

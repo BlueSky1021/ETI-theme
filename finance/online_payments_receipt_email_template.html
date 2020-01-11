@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETI - Online Payment Receipt - Email Template</title>
+<style type="text/css">
+  .text-right{text-align: right;}
+  .no-padding {padding: 0;}
+  .no-margin {margin: 0;}
+  .no-border{border:0!important;}
+  ul.rto-code {padding: none;text-align: center;margin-top: 15px;font-size: 14px;font-weight: bold;}
+  ul.rto-code li{list-style: none;display: inline;padding: 0 10px; border-right: 1px solid #363636;}
+   ul.rto-code li:last-child{border:0;}
+.payment-history tr td {border: 1px solid #ccc;padding: 5px;text-align: center;}
+</style>
+  </head>
+  <body  style="font-family: 'Malgun Gothic', Arial, sans-serif; margin: 0; padding: 0; width: 100%; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; position: relative;background-color: #EBF0EB;">
+    <div class="main-wrapper" style="padding: 20px;">
+      <table class="table-responsive" align="center" width="800" style="box-shadow: 0px 0px 3px #cccccc;font-size: 14px;color: #555555;background: #fff;">
+      <tbody class="">
+        <tr>
+          <td colspan="2"><div class="clearfix" style="height:50px;"></div></td>
+        </tr>
+      <tr>
+        <td width="50%" style="padding-left: 60px;">
+          <img src="http://eti.edu.au/files/email/images/eti_coloredtext_new_logo.png" style="margin: 0 auto;display: block; width: 200px;">
+        </td>
+        <td style="font-size: 10px;padding-right: 60px;" width="50%">
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">HEAD OFFICE: 20, Otter Street,</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">Collingwood VIC 3066</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">VICTORIA: 03 9088 0255</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">QUEENSLAND: 07 3154 2859</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">WEBSITE: www.eti.edu.au</p>
+           <p style="font-size: 9px; font-weight: bolder; margin:3px 0 0;">EMAIL: info@eti.edu.au</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 0 60px;">
+         <div class="clearfix" style="height: 40px;"></div>
+        <p>Dear %name%,</p>
+        <p style="font-size: 12px;">Below is the list of your payments amount received by Elite Training Institute.</p>
+        <br>
+        <p style="font-size: 20px;"><b>Payment History</b></p>
+              <table width="100%" class="payment-history" cellspacing="0" cellpadding="0" style="border: 1px solid #ccc;">
+                  <tr style="background-color: #78B526;color: #fff;">
+                    <td width="10%" class="no-border">Trxn Code</td>
+                    <td width="10%" class="no-border"> Payment Date</td>
+                    <td width="10%" class="no-border">Student Name</td>
+                    <td width="10%" class="no-border">Course</td>
+                    <td width="10%" class="no-border">Start Date</td>
+                    <td width="10%" class="no-border">End Date</td>
+                    <td width="10%" class="no-border">Amount Paid</td>
+                    <td width="10%" class="no-border"> Payment Type</td>
+                  </tr>
+                  %content%
+                  </table>
+                <br>
+                <p>Please retain this for your records so that you will be able to reference this transactions for customer services.</p>
+                <p>Should you have any clarifications or concerns, feel free to contact us. Thanks!</p>
+                 <br>
+                <p>Regards,</p>
+                <p>ETI Online Accounts</p>
+                 <br>
+                 <p>** This is a system generated e-mail. Please do not reply.**</p>
+                 <div class="clearfix" style="height:50px;"></div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+  </body>
+</html>

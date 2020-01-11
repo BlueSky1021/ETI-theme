@@ -1,0 +1,4 @@
+[05-Oct-2018 01:15:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_front_page() in /home/admineti/public_html/wp-content/themes/ETI theme/includes/header.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/admineti/public_html/wp-content/themes/ETI theme/includes/header.php on line 8
